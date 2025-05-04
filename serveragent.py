@@ -19,7 +19,7 @@ class QuoteEmailRequest(Model):
     summary: str
     user_address: str
 
-EMAIL_AGENT_ADDRESS = "agent1qfategfwrdju2avwylfm6qj52xxayeyfgmrmukkk4f0v4kf6ygx2s6hdnda"
+EMAIL_AGENT_ADDRESS = os.getenv("EMAIL_AGENT_ADDRESS")
 
 def get_asi1_response(query: str) -> str:
     api_key = os.getenv("ASI1_API_KEY")

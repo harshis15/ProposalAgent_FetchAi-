@@ -24,8 +24,7 @@ clientAgent = Agent(
     seed='asi1_user_seed'
 )
 
-# Replace with your actual server agent address
-SERVER_AGENT_ADDRESS = "agent1qtnesq9kv9uwmw2842x9pga8rcal0wjajuz6x0n3yydtz9gcxcrss5s0ku3"
+SERVER_AGENT_ADDRESS = os.getenv("SERVER_AGENT_ADDRESS")
 
 @clientAgent.on_event('startup')
 async def startup_handler(ctx: Context):

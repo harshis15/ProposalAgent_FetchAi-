@@ -11,8 +11,7 @@ class ASI1Response(Model):
 
 test_agent = Agent(name="test_agent", seed="test_agent_seed")
 
-# Set this to your actual client agent address
-CLIENT_AGENT_ADDRESS = "agent1qf3raddund034552ra5rw4euhda8d6g855k4hasj4nh2qzsjctf9yz4fsak"
+CLIENT_AGENT_ADDRESS = os.getenv("CLIENT_AGENT_ADDRESS")
 
 rfq_text = """
 Request for Quotation (RFQ)
