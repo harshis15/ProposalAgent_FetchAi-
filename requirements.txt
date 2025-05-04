@@ -1,0 +1,5 @@
+uAgents
+pydantic
+requests
+python-dotenv
+email-validator
